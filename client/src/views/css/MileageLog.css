@@ -1,0 +1,87 @@
+.mileageLogContainer {
+	min-height: 300px;
+	width: 80%;
+}
+
+.infoCard {
+	max-height: 280px;
+	background: #e8e8e8;
+	box-shadow: 1px 1px 4px #797979;
+	border-radius: 2px;
+	display: flex; 
+	flex-direction: column;
+	align-items: center;
+	padding: 8px;
+	overflow-y: scroll;
+}
+
+.tripLogPanel {
+	width: 100%;
+	min-height: 75px;
+	background: #FAFAFA;
+	margin-bottom: 8px;
+	box-shadow: 1px 1px 4px #C8C8C8;
+	border-radius: 2px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.tripLogPanel .date {
+
+	border-right: solid #A8A8A8 2px;
+	padding-right: 40px;
+	line-height: 40px;
+}
+
+.tripLogPanel .totalTrip p {
+	font-size: .9em;
+}
+
+.tripLogPanel .totalTrip p span {
+	font-size: 1.3em;
+	color: #138ade;
+	font-weight: bold;
+	margin-left: 4px;
+}
+
+.tripLogPanel .odometer {
+	max-height: 75px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.odoReadouts {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: .7em;
+	max-height: 45px;
+
+}
+
+.odoReadouts p {
+	text-align: right;
+	width: 130px
+}
+
+.odoReadouts span {
+	text-align: left;
+	display: flex;
+	justify-content: center;
+	min-width: 50px;
+	margin-left: 10px;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #138ADE;
+}
+
+.odoReadouts .odoEnding {
+	margin-top: -2px;
+}
+
+.odoReadouts .endingMileage {
+	margin-top: -14px;
+}

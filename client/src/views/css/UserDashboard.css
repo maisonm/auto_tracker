@@ -1,0 +1,266 @@
+.userView {
+	display: flex;
+	height: 100vh;
+	color: #595959;
+}
+
+.userSideBar {
+	width: 20%;
+	background: #15171B;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #FFFFFF;
+	box-shadow: 1px 1px 4px #797979;
+	z-index: 99;
+	position: relative;
+}
+
+.userPhoto {
+	margin-top: 50px;
+}
+
+.userName {
+	font-size: .9em;
+	margin-bottom: 100px;
+}
+
+.userDashboard {
+	width: 80%;
+	display: flex; 
+	flex-direction: column;
+	align-items: center;
+	background: #FAFAFA;
+}
+
+.addBtns {
+	width: 100%;
+}
+
+.addMileageBtn {
+	display: flex;
+	font-size: .7em;
+	align-items: center;
+	justify-content: center;
+	margin-top: -10px;
+	width: 100%;
+	transition: .3s;
+	position: relative;
+}
+
+.addMileageBtn:hover {
+	cursor: pointer;
+	background: #21252b;
+	transition: .3s;
+
+}
+
+.addMileageBtn img {
+	margin-right: 12px;
+}
+
+.addMileageInput {
+	border-radius: 2px;
+	height: 85px;
+	display: none!important;
+	background: #21252b;
+	position: relative;
+}
+
+.addMileageInput form {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+}
+
+.addMileageInput form input {
+	min-width: 120px;
+	padding-bottom: 4px;
+	outline: none;
+	transition: .3s;
+	background: #21252b;
+	border: none;
+	border-bottom: solid 1.4px #a8a8a8;
+	color: #e8e8e8;
+	text-align: center;
+	transition: .6s;
+}
+
+.addMileageInput form select {
+	min-width: 120px;
+	padding-bottom: 4px;
+	outline: none;
+	transition: .3s;
+	background: #21252b;
+	border: none;
+	border-radius: 0px;
+	border-bottom: solid 1.4px #a8a8a8;
+	color: #e8e8e8;
+	text-align: center;
+	transition: .6s;
+	margin-top: 4px;
+}
+
+.addMileageInput form button {
+	border: none;
+	background: #21252b;
+	padding-top: 10px;
+	margin-top: 2px;
+	cursor: pointer;
+	margin-bottom: 4px;
+	font-size: .55em;
+	color: #fafafa;
+
+}
+
+.addMileageInput form button:focus {
+	border: none;
+	outline: none;
+}
+
+.addMileageInput form button img {
+	width: 8px;
+}
+
+.addMileageInput form input:focus {
+	min-width: 140px;
+	border-bottom: solid 1.4px #E8E8E8;
+	transition: .6s;
+}
+
+.addMileageInput form input:nth-child(1) {
+	margin-bottom: 8px;
+	margin-top: 12px;
+
+}
+
+.addMileageInput p {
+	font-size: .5em;
+	position: absolute;
+	top: -2px;
+	right: 8px;
+	color: #595959;
+	cursor: pointer;
+	transition: .3s;
+	animation-delay: .2s;
+	opacity: 1;
+}
+
+.addMileageInput p:hover {
+	color: #fafafa;
+	transition: .3s;
+}
+
+.addExpenseBtn {
+	display: flex;
+	font-size: .7em;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	transition: .3s;
+}
+
+.addExpenseBtn:hover {
+	cursor: pointer;
+	background: #21252b;
+	transition: .3s;
+}
+
+.addExpenseBtn img {
+	margin-right: 12px;
+}
+
+.footerLogo {
+	position: absolute;
+	bottom: 4px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: .7em;
+	color: #e8e8e8;
+}
+
+.footerLogo img {
+	width: 180px;
+	margin-bottom: -20px;
+}
+
+/* Animations */
+
+.fadeOut {
+	animation: fadeOut ease-in .2s forwards;
+}
+
+@keyframes fadeOut {
+	10% { opacity: 1; }
+	20% { opacity: .9; }
+	30% { opacity: .8; }
+	40% { opacity: .7; }
+	50% { opacity: .6; }
+	60% { opacity: .5; }
+	70% { opacity: .4; }
+	80% { opacity: .3; }
+	90% { opacity: .15; }
+	100% { opacity: 0; }
+}
+
+.leftSlide {
+	animation: slideOutLeft .3s ease-out forwards;
+}
+
+@keyframes slideOutLeft {
+	10% { left: 50%; }
+	20% { left: 40%; }
+	30% { left: 30%; }
+	40% { left: 20%; }
+	50% { left: 10%; }
+	60% { left: 0%; }
+	70% { left: -10%; }
+	80% { left: -20%; }
+	90% { left: -40%; }
+	100% { left: -50%; }
+
+}
+
+.slideUp {
+	animation: slideUp .2s ease-in forwards;
+	animation-delay: .5s;
+}
+
+.slideDown {
+	animation: slideDown .2s ease-in forwards;
+}
+
+.visible {
+	display: flex!important
+}
+
+@keyframes slideUp {
+	10% { height: 50px; }
+	20% { height: 45px; }
+	30% { height: 40px; }
+	40% { height: 35px; }
+	50% { height: 30px; }
+	60% { height: 25px; }
+	70% { height: 20px; }
+	80% { height: 15px; }
+	90% { height: 10px; }
+	100% { height: 0px; }
+}
+
+@keyframes slideDown {
+	10% { height: 0px; }
+	20% { height: 10px; }
+	30% { height: 15px; }
+	40% { height: 20px; }
+	50% { height: 25px; }
+	60% { height: 30px; }
+	70% { height: 35px; }
+	80% { height: 40px; }
+	90% { height: 45px; }
+	100% { height: 50px; }
+}
